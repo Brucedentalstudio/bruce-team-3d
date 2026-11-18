@@ -53,7 +53,8 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: #0d1326; col
   background: rgba(26,18,16,.82); border: 1px solid rgba(233,196,106,.55); border-radius: 999px; padding: 6px 10px; }
 #bar button { font: inherit; font-size: 12.5px; color: var(--paper); background: transparent; border: 1px solid transparent;
   border-radius: 999px; padding: 5px 11px; cursor: pointer; }
-#bar button:hover { border-color: var(--gold); }
+#bar button:hover, #bar .link:hover { border-color: var(--gold); }
+#bar .link { font-size: 12.5px; color: var(--gold); font-weight: 700; text-decoration: none; border: 1px solid transparent; border-radius: 999px; padding: 5px 11px; white-space: nowrap; }
 #bar button.on { background: var(--red); border-color: var(--gold); }
 #bar .sep { width: 1px; height: 18px; background: rgba(233,196,106,.4); margin: 0 4px; }
 #hint { position: fixed; left: 50%; bottom: 58px; transform: translateX(-50%); font-size: 11.5px; color: rgba(245,234,210,.6);
@@ -89,7 +90,7 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: #0d1326; col
   #left { top: auto; bottom: 62px; left: 8px; right: 8px; width: auto; max-height: 24%; padding: 8px 10px; }
   #card { left: 8px; right: 8px; width: auto; bottom: 62px; z-index: 2; }
   #bar { left: 8px; right: 8px; transform: none; bottom: 8px; justify-content: space-between; gap: 2px; padding: 5px 6px; }
-  #bar button { font-size: 11px; padding: 6px 5px; white-space: nowrap; }
+  #bar button, #bar .link { font-size: 10.5px; padding: 6px 4px; white-space: nowrap; }
   .tag .say { display: none !important; }   /* việc đang làm đã có trong bảng ở dưới */
   .tag:not(.busy):not(.wait) { visibility: hidden; }   /* chỉ hiện tên người đang làm; bấm vào nhân vật để xem ai */
   #bar .sep { display: none; }
@@ -131,6 +132,7 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: #0d1326; col
   <span class="sep"></span>
   <button id="btnDemo" title="Chạy một kịch bản mẫu để xem cả công ty hoạt động">Diễn tập</button>
   <button id="btnNight">Ngày / Đêm</button>
+  <a class="link" href="https://brucedentalstudio.github.io/ips-lab-3d/">IPS Lab ↗</a>
 </nav>
 <div id="hint">Kéo chuột để xoay · cuộn để phóng to · bấm vào nhân vật để xem việc</div>
 
